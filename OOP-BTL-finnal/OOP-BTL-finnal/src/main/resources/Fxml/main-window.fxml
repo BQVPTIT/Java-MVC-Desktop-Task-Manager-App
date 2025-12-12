@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="415.0" prefWidth="700.0" stylesheets="@../Styles/back-ground-style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="taskmanagement.Controllers.CalendarWindowController">
+
+    <!-- Top bar with buttons and DatePicker -->
+    <Button fx:id="previousButton"
+            layoutX="200.0" layoutY="22.0"
+            mnemonicParsing="false"
+            onAction="#handlePreviousButtonAction" style="-fx-background-color: #FFFFFF;"
+            text="Trước" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="22.0" />
+
+    <DatePicker fx:id="datePicker" editable="false"
+                layoutX="280.0" layoutY="22.0"
+                onAction="#handleChangeDate"
+                prefHeight="26.0" prefWidth="125.0"
+                AnchorPane.leftAnchor="280.0" AnchorPane.rightAnchor="280.0" AnchorPane.topAnchor="22.0" />
+
+    <Button fx:id="nextButton"
+            layoutX="424.0" layoutY="22.0"
+            mnemonicParsing="false"
+            onAction="#handleNextButtonAction"
+            prefHeight="26.0" prefWidth="61.0" style="-fx-background-color: #FFFFFF;"
+            text="Sau" AnchorPane.rightAnchor="200.79999999999995" AnchorPane.topAnchor="22.0" />
+
+    <!--update backgrond-->
+    <Button fx:id="uploadBackgroundButton"
+            text="Hình nền"
+            onAction="#handleUploadBackground"
+            prefHeight="35.0"
+            prefWidth="100.0"
+            style="-fx-background-radius: 10; -fx-background-color: #FFFFFF; -fx-text-fill: black; -fx-font-size: 14px;"
+            AnchorPane.topAnchor="20.0"
+            AnchorPane.rightAnchor="80.0" />
+
+    <!-- Monday -->
+    <Label fx:id="mondayLabel" alignment="CENTER" layoutY="80.0" onMouseClicked="#mondayClicked" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: #FFFFFF; -fx-font-weight: bold;" text="Monday" />
+    <ListView fx:id="mondayListView" layoutY="120.0" onMouseClicked="#mondayClicked" prefHeight="295.0" prefWidth="86.0" style="-fx-border-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="119.80000000000001" />
+
+    <!-- Tuesday -->
+    <Label fx:id="tuesdayLabel" alignment="CENTER" layoutX="100.0" layoutY="80.0" onMouseClicked="#tuesdayClicked" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: #FFFFFF; -fx-font-weight: bold;" text="Tuesday" />
+    <ListView fx:id="tuesdayListView" layoutX="100.0" layoutY="120.0" onMouseClicked="#tuesdayClicked" prefHeight="295.0" prefWidth="86.0" style="-fx-border-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="119.80000000000001" />
+
+    <!-- Wednesday -->
+    <Label fx:id="wednesdayLabel" alignment="CENTER" layoutX="200.0" layoutY="80.0" onMouseClicked="#wednesdayClicked" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: #FFFFFF; -fx-font-weight: bold;" text="Wednesday" />
+    <ListView fx:id="wednesdayListView" layoutX="200.0" layoutY="120.0" onMouseClicked="#wednesdayClicked" prefHeight="295.0" prefWidth="86.0" style="-fx-border-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="119.80000000000001" />
+
+    <!-- Thursday -->
+    <Label fx:id="thursdayLabel" alignment="CENTER" layoutX="300.0" layoutY="80.0" onMouseClicked="#thursdayClicked" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: #FFFFFF; -fx-font-weight: bold;" text="Thursday" />
+    <ListView fx:id="thursdayListView" layoutX="300.0" layoutY="120.0" onMouseClicked="#thursdayClicked" prefHeight="295.0" prefWidth="86.0" style="-fx-border-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="119.80000000000001" />
+
+    <!-- Friday -->
+    <Label fx:id="fridayLabel" alignment="CENTER" layoutX="400.0" layoutY="80.0" onMouseClicked="#fridayClicked" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: #FFFFFF; -fx-font-weight: bold;" text="Friday" />
+    <ListView fx:id="fridayListView" layoutX="400.0" layoutY="120.0" onMouseClicked="#fridayClicked" prefHeight="295.0" prefWidth="86.0" style="-fx-border-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="119.80000000000001" />
+
+    <!-- Saturday -->
+    <Label fx:id="saturdayLabel" alignment="CENTER" layoutX="500.0" layoutY="80.0" onMouseClicked="#saturdayClicked" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: #FFFFFF; -fx-font-weight: bold;" text="Saturday" />
+    <ListView fx:id="saturdayListView" layoutX="500.0" layoutY="120.0" onMouseClicked="#saturdayClicked" prefHeight="295.0" prefWidth="86.0" style="-fx-border-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="119.80000000000001" />
+
+    <!-- Sunday -->
+    <Label fx:id="sundayLabel" alignment="CENTER" layoutX="600.0" layoutY="80.0" onMouseClicked="#sundayClicked" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: #FFFFFF; -fx-font-weight: bold;" text="Sunday" />
+    <ListView fx:id="sundayListView" layoutX="600.0" layoutY="120.0" onMouseClicked="#sundayClicked" prefHeight="295.0" prefWidth="86.0" style="-fx-border-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="119.80000000000001" />
+
+</AnchorPane>
+

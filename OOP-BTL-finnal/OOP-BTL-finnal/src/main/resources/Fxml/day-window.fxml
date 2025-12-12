@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane"
+            maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0"
+            stylesheets="@../Styles/back-ground-style.css"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="taskmanagement.Controllers.DayViewController">
+
+    <!-- ListView hiển thị các Task -->
+    <ListView fx:id="listView" layoutX="98.0" layoutY="70.0"
+              prefHeight="300.0" prefWidth="402.0"
+              AnchorPane.bottomAnchor="30.0"
+              AnchorPane.leftAnchor="100.0"
+              AnchorPane.rightAnchor="100.0"
+              AnchorPane.topAnchor="70.0" />
+
+    <!-- HBox chứa các nút Thêm, Xoá, Chạy -->
+    <HBox alignment="CENTER" layoutX="100.0" layoutY="8.0"
+          prefHeight="22.0" prefWidth="400.0" spacing="20.0"
+          AnchorPane.leftAnchor="100.0"
+          AnchorPane.rightAnchor="100.0"
+          AnchorPane.topAnchor="8.0">
+
+        <Button fx:id="addButton" mnemonicParsing="false" onAction="#handleAddTask"
+                prefHeight="26.0" prefWidth="60.0"
+                style="-fx-background-color: #FFFFFF;" text="Thêm">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#handleDeleteTask"
+                prefHeight="26.0" prefWidth="60.0"
+                style="-fx-background-color: #FFFFFF;" text="Xoá">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="startButton" mnemonicParsing="false" onAction="#handleStartTask"
+                prefHeight="26.0" prefWidth="60.0"
+                style="-fx-background-color: #FFFFFF;" text="Chạy">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+    </HBox>
+
+    <!-- ProgressBar và Label hiển thị % hoàn thành -->
+    <StackPane layoutX="38.0" layoutY="38.0" prefHeight="33.0" prefWidth="205.0"
+               AnchorPane.leftAnchor="100.0">
+        <ProgressBar fx:id="completionBar" prefHeight="22.0" prefWidth="200.0" progress="0.0" />
+        <Label fx:id="completionPercentage" alignment="CENTER"
+               prefHeight="18.0" prefWidth="37.0"
+               style="-fx-background-color: transparent;" text="0%" />
+    </StackPane>
+
+    <!-- Legend hiển thị mức độ quan trọng -->
+    <VBox fx:id="importanceLegendBox" layoutX="500.0" layoutY="68.0"
+          prefHeight="78.0" prefWidth="80.0"
+          style="-fx-background-color: #f0f0f0; -fx-background-radius: 5;"
+          AnchorPane.rightAnchor="20.0" />
+
+    <!-- Label hiển thị ngày -->
+    <Label fx:id="dateLabel" alignment="CENTER" layoutX="400.0" layoutY="46.0"
+           prefHeight="22.0" prefWidth="100.0"
+           style="-fx-background-color: #f0f0f0; -fx-background-radius: 5;"
+           textAlignment="CENTER" />
+
+    <!-- Nút thoát -->
+    <Button fx:id="exitButton" alignment="CENTER" layoutX="14.0" layoutY="10.0"
+            mnemonicParsing="false" onAction="#handleExitButton"
+            prefHeight="40.0" prefWidth="90.0"
+            style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" text="Thoát">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Button>
+
+</AnchorPane>

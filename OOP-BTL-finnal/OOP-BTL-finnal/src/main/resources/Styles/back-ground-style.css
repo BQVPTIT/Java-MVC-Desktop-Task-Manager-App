@@ -1,0 +1,43 @@
+/* Background chính */
+.root {
+    -fx-background-image: url('../Images/background-image.jpg'); /* .jpg hoặc .jpeg tuỳ bạn */
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+/* ListView và ListCell */
+.list-view {
+    -fx-background-color: rgba(240, 240, 240, 0.3);
+    -fx-border-color: #d93131;
+    -fx-border-width: 0 2px 0 0; /* viền bên phải */
+}
+
+.list-cell {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+}
+
+/* Label */
+.label {
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+/* Nút */
+.button {
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0, 0, 2);
+    -fx-font-size: 14px;
+}
+
+/* Hover hiệu ứng cho button */
+.button:hover {
+    -fx-opacity: 0.9;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
