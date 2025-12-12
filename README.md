@@ -48,4 +48,4 @@ mở rộng, bảo trì và quản lý mã nguồn.
 ## Báo cáo
 - Báo cáo chi tiết của dự án được đính kèm trong file PDF.
 
-## Sản phẩm là bài tập lớn cho môn học Lập trình hướng đối tượng của nhóm sinh viên năm ba Học Viện Công nghệ Bưu chính Viễn Thông ##
+## Sản phẩm là bài tập lớn cho môn học Lập trình hướng đối tượng của nhóm sinh viên năm ba Học Viện Công nghệ Bưu chính Viễn Thông năm 2025 ##
