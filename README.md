@@ -48,4 +48,8 @@ mở rộng, bảo trì và quản lý mã nguồn.
 ## Báo cáo
 - Báo cáo chi tiết của dự án được đính kèm trong file PDF.
 
-## Sản phẩm là bài tập lớn cho môn học Lập trình hướng đối tượng của nhóm sinh viên năm ba Học Viện Công nghệ Bưu chính Viễn Thông năm 2025 ##
+## Lời cảm ơn
+Nhóm xin gửi lời cảm ơn chân thành tới TS. Nguyễn Mạnh Sơn – giảng viên môn Lập trình hướng đối tượng, đã hướng dẫn nhóm hoàn thành được dự án này.
+##
+
+## Sản phẩm là bài tập lớn cho môn học Lập trình hướng đối tượng của nhóm sinh viên tại Học Viện Công nghệ Bưu chính Viễn Thông năm 2025 ##
