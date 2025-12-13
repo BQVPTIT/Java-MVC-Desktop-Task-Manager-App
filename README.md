@@ -46,8 +46,5 @@ mở rộng, bảo trì và quản lý mã nguồn.
 ## Công cụ quản lý dự án
 - Sử dụng Maven 
 
-## Báo cáo
-- Báo cáo chi tiết của dự án được đính kèm trong file PDF.
-
 ## Lời cảm ơn
 Nhóm xin gửi lời cảm ơn chân thành tới TS. Nguyễn Mạnh Sơn – giảng viên môn Lập trình hướng đối tượng, đã hướng dẫn nhóm hoàn thành được dự án này.
