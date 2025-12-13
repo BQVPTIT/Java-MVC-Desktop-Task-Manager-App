@@ -1,9 +1,10 @@
 # Java MVC Desktop Task Manager App
 
 ## Giới thiệu dự án
-1. Dự án "Phát triển Ứng dụng Quản lý Thời gian và Công việc" được thiết kế nhằm giúp người dùng
+1. Bài tập lớn được thực hiện trong khuôn khổ môn học Lập trình hướng đối tượng tại Học viện Công nghệ Bưu chính Viễn Thông (PTIT).
+2. Dự án "Phát triển Ứng dụng Quản lý Thời gian và Công việc" được thiết kế nhằm giúp người dùng
 tổ chức và theo dõi các công việc hằng ngày một cách hiệu quả.
-2. Ứng dụng cho phép người dùng:
+3. Ứng dụng cho phép người dùng:
 - Thêm, xóa và quản lý các nhiệm vụ theo từng ngày
 - Thiết lập thời gian thực hiện và mức độ quan trọng của công việc
 - Sử dụng bộ đếm thời gian Pomodoro kèm theo trình phát nhạc MP3, luân phiên giữa các phiên làm việc và nghỉ ngơi
@@ -49,5 +50,4 @@ mở rộng, bảo trì và quản lý mã nguồn.
 - Báo cáo chi tiết của dự án được đính kèm trong file PDF.
 
 ## Lời cảm ơn
-- Nhóm xin gửi lời cảm ơn chân thành tới TS. Nguyễn Mạnh Sơn – giảng viên môn Lập trình hướng đối tượng, đã hướng dẫn nhóm hoàn thành được dự án này.
-- Sản phẩm là bài tập lớn cho môn học Lập trình hướng đối tượng của nhóm sinh viên tại Học Viện Công nghệ Bưu chính Viễn Thông năm 2025
+Nhóm xin gửi lời cảm ơn chân thành tới TS. Nguyễn Mạnh Sơn – giảng viên môn Lập trình hướng đối tượng, đã hướng dẫn nhóm hoàn thành được dự án này.
